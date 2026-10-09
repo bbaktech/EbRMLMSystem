@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">EarnByRefer</string>
+    <string name="refaral_id">Referral ID</string>
+    <string name="name">Name:</string>
+    <string name="pan">PAN:</string>
+    <string name="next">Next</string>
+    <string name="phone">Mobile number</string>
+    <string name="address">Postal Address</string>
+    <string name="PAN_IMAGE">PAN card photo</string>
+    <string name="upload_pan_image">Upload PAN Image</string>
+    <string name="aboutus">AboutUs</string>
+    <string name="action_settings">Settings</string>
+    <string name="upload_payment_image">payment image</string>
+    <string name="regester">Register</string>
+    <string name="accnumber">SB Account No</string>
+    <string name="bank_name">Bank Name:</string>
+    <string name="IFSC_code">IFSC Code</string>
+    <string name="payment_details">Payment Details</string>
+    <string name="Help">Help…</string>
+    <string name="ack_text">thanks for registering with EarnByRefer platform. pls note your ID: XXXXXXXXX,
+        pls do your future correspondence by giving this ID.
+        you need to wait minimum for 24 hours , to activate your account. thanks</string>
+    <string name="btn_close_str">Close</string>
+    <string name="team_members">Team Members.</string>
+    <string name="list_team_members">Will be updated as soon as you make team</string>
+    <string name="subscriberid">SubscriberID</string>
+    <string name="referred_byid">Referred ByID:</string>
+    <string name="yyyyyyyyyy">YYYYYYYYYY</string>
+    <string name="subscriber_name">Subscriber Name:</string>
+    <string name="aaaaaaaaaa">AAAAAAAAAA</string>
+    <string name="referred_by">Referred By:</string>
+    <string name="bbbbbbbbbbbb">BBBBBBBBBBBB</string>
+    <string name="balance_amount_rs">Balance Amount(Rs):</string>
+    <string name="withdraw_and_close_a_c">Withdraw and Close A/C</string>
+    <string name="xxxxxxxxx">XXXXXXXXXX</string>
+    <string name="_100000000">000000000</string>
+    <string name="welcome_message">Welcome Back</string>
+    <string name="username_or_email">Subscriber ID</string>
+    <string name="login">Login</string>
+    <string name="new_user_register_here">New user? Register here</string>
+    <string name="password">Password</string>
+</resources>

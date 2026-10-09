@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+    <TextView
+        android:id="@+id/tv_id1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignStart="@id/toolbar"
+        android:text="@string/subscriberid" />
+
+    <TextView
+        android:id="@+id/tv_subID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignEnd="@id/toolbar"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/xxxxxxxxx" />
+
+    <TextView
+        android:id="@+id/ref_id1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/tv_id1"
+        android:layout_alignStart="@id/tv_id1"
+        android:text="@string/referred_byid" />
+
+    <TextView
+        android:id="@+id/tv_refID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/yyyyyyyyyy"
+        android:layout_below="@id/tv_subID"
+        android:layout_alignEnd="@id/tv_subID"/>
+
+    <TextView
+        android:id="@+id/tv_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/subscriber_name"
+        android:layout_below="@+id/ref_id1"
+        android:layout_alignStart="@id/ref_id1"/>
+    <TextView
+        android:id="@+id/tv_subName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_refID"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/aaaaaaaaaa"
+        android:layout_alignEnd="@id/tv_refID" />
+
+    <TextView
+        android:id="@+id/tv_ref_name1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/referred_by"
+        android:layout_alignStart="@id/tv_name1"/>
+
+    <TextView
+        android:id="@+id/tv_ref_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/bbbbbbbbbbbb"
+        android:layout_below="@id/tv_subName"
+        android:layout_alignEnd="@id/tv_subName"/>
+
+    <TextView
+        android:id="@+id/tv_balance1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ref_name1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/balance_amount_rs"
+        android:layout_alignStart="@id/tv_ref_name1"/>
+    <TextView
+        android:id="@+id/tv_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ref_name"
+        android:layout_alignEnd="@id/tv_ref_name"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/_100000000" />
+    <TextView
+        android:id="@+id/tv_team_members1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_balance1"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:text="@string/team_members"
+        android:layout_alignStart="@id/tv_balance1"/>
+    <TextView
+        android:id="@+id/tv_team_members"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/tv_balance"
+        android:layout_alignEnd="@id/tv_balance"
+        android:text="@string/list_team_members" />
+    <Button
+        android:id="@+id/checkout_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_hight"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/tv_team_members1"
+        android:text="@string/withdraw_and_close_a_c" />
+    <Button
+        android:id="@+id/next_cls"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/text_hight"
+        android:layout_below="@+id/checkout_acc"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:text="@string/btn_close_str" />
+
+</RelativeLayout>
