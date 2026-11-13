@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
     android:orientation="vertical"
-    android:padding="24dp"
     android:gravity="center"
-    android:background="#FFFFFF">
+    android:padding="24dp"
+    android:background="#FFFFFF"
+    tools:context=".LoginActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -20,59 +20,82 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <TextView
+        android:id="@+id/tvLoginHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/welcome_message"
+        android:text="@string/earnbyrefer"
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="#333333"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="8dp" />
 
-    <!-- Username Input Field -->
-    <EditText
-        android:id="@+id/etID"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/please_sign_in_to_continue"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginBottom="32dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="@string/username_or_email"
-        android:inputType="text"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:layout_marginBottom="16dp"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <!-- Password Input Field -->
-    <EditText
-        android:id="@+id/etPassword"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtdealerid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dealer_id"
+            android:inputType="text"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:background="@android:drawable/editbox_background_normal"
-        android:layout_marginBottom="24dp"/>
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:endIconMode="password_toggle"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-    <!-- Login Button -->
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="52dp"
         android:text="@string/login"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#007ACC"
-        android:textSize="16sp"/>
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="16dp" />
 
-    <!-- New User Option Redirect -->
-    <TextView
-        android:id="@+id/tvRegisterRedirect"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/new_user_register_here"
-        android:textColor="#007ACC"
-        android:textSize="14sp"
-        android:layout_marginTop="20dp"
-        android:padding="8dp"
-        android:clickable="true"
-        android:focusable="true"/>
+        android:orientation="horizontal">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="#666666" />
+
+        <TextView
+            android:id="@+id/tvRegisterRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_here"
+            android:textStyle="bold"
+            android:textColor="#1E88E5"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
 </LinearLayout>

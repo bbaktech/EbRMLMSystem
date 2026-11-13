@@ -22,5 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "EarnByRefer"
+rootProject.name = "EarnByReferV10"
 include(":app")
+ 

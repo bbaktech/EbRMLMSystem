@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F5F7FA"
+    tools:context=".ItemPurchase">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_catalog"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#1F2937"
+            android:layout_marginBottom="16dp" />
+
+        <!-- 2x2 GRID - ROW 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginBottom="12dp">
+
+            <!-- PRODUCT 1 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E5E7EB">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal">
+
+                    <!-- Discount Badge -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_50_off"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:background="#DC2626"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivProduct1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/amrut_fit"
+                        android:contentDescription="@string/product_image" />
+
+                    <TextView
+                        android:id="@+id/tvProductName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amrut Fit"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                    <!-- MRP -->
+                    <TextView
+                        android:id="@+id/tvMrp1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MRP: ₹500"
+                        android:textSize="12sp"
+                        android:textColor="#9CA3AF"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Discounted Price -->
+                    <TextView
+                        android:id="@+id/tvPrice1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹250"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#059669"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Buy Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnBuy1"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/buy_now"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="6dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- PRODUCT 2 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E5E7EB">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal">
+
+                    <!-- Discount Badge -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_50_off"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:background="#DC2626"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivProduct2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/amrut_ghee"
+                        android:contentDescription="@string/product_image" />
+
+                    <TextView
+                        android:id="@+id/tvProductName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amrut Ghee"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                    <!-- MRP -->
+                    <TextView
+                        android:id="@+id/tvMrp2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="MRP: ₹500"
+                        android:textSize="12sp"
+                        android:textColor="#9CA3AF"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Discounted Price -->
+                    <TextView
+                        android:id="@+id/tvPrice2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="₹250"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#059669"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Buy Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnBuy2"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/buy_now"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="6dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- 2x2 GRID - ROW 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            android:layout_marginBottom="20dp">
+
+            <!-- PRODUCT 3 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E5E7EB">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal">
+
+                    <!-- Discount Badge -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_50_off"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:background="#DC2626"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivProduct3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/amrut_honey"
+                        android:contentDescription="@string/product_image" />
+
+                    <TextView
+                        android:id="@+id/tvProductName3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amrut Honey"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                    <!-- MRP -->
+                    <TextView
+                        android:id="@+id/tvMrp3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="MRP: ₹500"
+                        android:textSize="12sp"
+                        android:textColor="#9CA3AF"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Discounted Price -->
+                    <TextView
+                        android:id="@+id/tvPrice3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="₹250"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#059669"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Buy Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnBuy3"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/buy_now"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="6dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- PRODUCT 4 -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:strokeWidth="1dp"
+                app:strokeColor="#E5E7EB">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="12dp"
+                    android:gravity="center_horizontal">
+
+                    <!-- Discount Badge -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/discount_50_off"
+                        android:textSize="11sp"
+                        android:textStyle="bold"
+                        android:textColor="#FFFFFF"
+                        android:background="#DC2626"
+                        android:paddingHorizontal="6dp"
+                        android:paddingVertical="2dp"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivProduct4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/amrut_ortho"
+                        android:contentDescription="@string/product_image" />
+
+                    <TextView
+                        android:id="@+id/tvProductName4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Amrut Ortho"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#111827"
+                        android:layout_marginTop="8dp"
+                        android:maxLines="1"
+                        android:ellipsize="end" />
+
+                    <!-- MRP -->
+                    <TextView
+                        android:id="@+id/tvMrp4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="MRP: ₹500"
+                        android:textSize="12sp"
+                        android:textColor="#9CA3AF"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Discounted Price -->
+                    <TextView
+                        android:id="@+id/tvPrice4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="₹250"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="#059669"
+                        android:layout_marginTop="2dp" />
+
+                    <!-- Buy Button -->
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnBuy4"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:text="@string/buy_now"
+                        android:textSize="12sp"
+                        android:layout_marginTop="10dp"
+                        app:cornerRadius="6dp" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+        <!-- BOTTOM ACTION BUTTONS -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPurchaseAll"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/purchase_now"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cornerRadius="8dp"
+            android:layout_marginBottom="12dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnClose"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/close"
+            android:textSize="16sp"
+            android:textColor="#DC2626"
+            app:strokeColor="#DC2626"
+            app:cornerRadius="8dp" />
+
+    </LinearLayout>
+</ScrollView>
